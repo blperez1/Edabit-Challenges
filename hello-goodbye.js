@@ -3,6 +3,7 @@
 sayHelloBye("alon", 1) ➞ "Hello Alon"
 sayHelloBye("Tomi", 0) ➞ "Bye Tomi"
 sayHelloBye("jose", 0) ➞ "Bye Jose"*/
+
 function firstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
 }
@@ -15,3 +16,7 @@ function sayHelloBye(name, num) {
         return `Bye ${str}`
     }
 }
+
+sayHelloBye("alon", 1)
+sayHelloBye("Tomi", 0)
+sayHelloBye("jose", 0)

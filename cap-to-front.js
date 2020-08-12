@@ -4,12 +4,6 @@ capToFront("hApPy") ➞ "APhpy"
 capToFront("moveMENT") ➞ "MENTmove"
 capToFront("shOrtCAKE") ➞ "OCAKEshrt" */
 
-// function capToFront(s) {
-//     let regex = /[A-Ž]/g;
-//     let upperLetters = regex.test(s)
-//     upperLetters.filter( )
-// }
-
 function capToFront(s) {
     let lettersArray = s.split("")
     const upperLetters = lettersArray.filter(element => element == element.toUpperCase());
