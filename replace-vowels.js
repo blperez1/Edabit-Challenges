@@ -39,9 +39,9 @@ function replaceVowel2(s) {
 }
 
 
-console.log(replaceVowel("karachi"));
-console.log(replaceVowel("chembur"));
-console.log(replaceVowel("khandbari"));
+replaceVowel("karachi");
+replaceVowel("chembur");
+replaceVowel("khandbari");
 
 replaceVowel2("karachi");
 replaceVowel2("chembur");
