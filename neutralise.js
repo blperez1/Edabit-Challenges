@@ -21,7 +21,7 @@ neutralise("-++-", "-+-+") ➞ "-+00" */
 
 function neutralise(s1, s2) {
     return [...s1].reduce((acc, value, index) => {
-        return (value === [...s2][index]) ? acc + value : "0";
+        return (value === [...s2][index]) ? acc + value : acc + 0;
     }, "")
 }
 
