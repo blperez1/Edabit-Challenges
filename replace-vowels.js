@@ -9,7 +9,7 @@
 replaceVowel("karachi") ➞ "k1r1ch3"
 replaceVowel("chembur") ➞ "ch2mb5r"
 replaceVowel("khandbari") ➞ "kh1ndb1r3"*/
-
+//
 function replaceVowel(word) {
     for (let i = 0; i <= word.length; i++) {
         switch (word[i]) {
