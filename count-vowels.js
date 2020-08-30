@@ -15,7 +15,11 @@ function countVowels(str) {
     return count;
 }
 
+function countVowels2(str) {
+    return str.match(/[aeiuo]/g).length
+}
 
-console.log(countVowels("Celebration"));
-console.log(countVowels("Palm"));
-console.log(countVowels("Prediction"));
+
+console.log(countVowels2("Celebration"));
+console.log(countVowels2("Palm"));
+console.log(countVowels2("Prediction"));
