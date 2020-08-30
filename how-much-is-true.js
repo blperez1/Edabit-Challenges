@@ -16,5 +16,4 @@ function countTrue(arr) {
     return count;
 }
 
-countTrue(array);
-countTrue(array2);
+const countTrue2 = (arr) = arr.reduce(item => item === true)
