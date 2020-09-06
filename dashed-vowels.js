@@ -18,5 +18,14 @@ function dashed(str) {
     return arr.join('')
 }
 
+function dashed2(str) {
+    return str.replace(/[aeiou]/gi, (c) => `-${c}-`)
+}
 
+dashed("Edabit")
+dashed("Carpe Diem")
+dashed("Fight for your right to party!")
 
+dashed2("Edabit")
+dashed2("Carpe Diem")
+dashed2("Fight for your right to party!")
