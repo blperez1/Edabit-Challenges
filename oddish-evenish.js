@@ -15,6 +15,11 @@ function oddishOrEvenish(n) {
     return sum % 2 === 0 ? "Evenish" : "Oddish"
 }
 
+function oddishOrEvenish2(n) {
+    return [...String(n)]
+    .map(Number)
+    .reduce((acc, value) => acc + value) % 2 === 0 ? "Evenish" : "Oddish"
+}
 
 
 oddishOrEvenish(43) //oddish
@@ -25,3 +30,11 @@ oddishOrEvenish(4433) //evenish
 oddishOrEvenish(11) //evenish
 oddishOrEvenish(211112) //evenish
 
+
+oddishOrEvenish2(43) //oddish
+oddishOrEvenish2(373) //oddish
+oddishOrEvenish2(55551) //oddish
+oddishOrEvenish2(694) //oddish
+oddishOrEvenish2(4433) //evenish
+oddishOrEvenish2(11) //evenish
+oddishOrEvenish2(211112) //evenish
