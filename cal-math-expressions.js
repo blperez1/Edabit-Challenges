@@ -39,6 +39,21 @@ function mathematicalExp(exp, numbers) {
     return arr
 
 }
+
+function mathematicalExp(exp, numbers) {
+    let eq = exp.split('=')
+    let sign = eq[1].split("")
+    const [operand1, operator, operand2] = sign
+    let equation = {
+        '+': number + parseInt(operand2),
+        '-': number - operand2,
+        '*': number * operand2,
+        '/': number / operand2,
+        '^': number ** operand
+    }
+    return numbers.map(number => `f(${number})`)
+    
+}
 console.log(mathematicalExp("f(x)=x+1", [1,2,3]))
 console.log(mathematicalExp("f(x)=x+1", [1, 2]));
 console.log(mathematicalExp("f(x)=x^2", [1, 2, 3]));
