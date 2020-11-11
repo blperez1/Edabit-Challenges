@@ -13,6 +13,11 @@ function count(n) {
     return absNumber.toString().length;
 }
 
+function count2(n) {
+	const arr = [...n.toString()]
+ 	return arr.includes("-") ? arr.length - 1 : arr.length
+}
+
 console.log(count(-314890))
 console.log(count(318))
 console.log(count(-92563))
