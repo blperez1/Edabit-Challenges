@@ -15,6 +15,9 @@ const numbersSum = (arr) => arr.reduce((acc, element) => {
     return sum;
 }, 0)
 
+const numbersSum2 = arr => arr.filter(x => typeof(x) === 'number')
+                            .reduce((a,b) => a + b, 0);
+
 console.log(numbersSum([1, 2, "13", "4", "645"]))
 console.log(numbersSum([true, false, "123", "75"]))
 console.log(numbersSum([1, 2, 3, 4, 5, true]))
